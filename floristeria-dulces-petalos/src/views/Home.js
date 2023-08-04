@@ -22,7 +22,9 @@ function Home() {
   };
 
   const filteredProducts = products.filter((product) =>
-    product.name.toLowerCase().includes(searchText.toLowerCase())
+    product.name.toLowerCase().includes(searchText.toLowerCase()) ||
+    product.binomialName.toLowerCase().includes(searchText.toLowerCase())
+  
   );
 
   return (
