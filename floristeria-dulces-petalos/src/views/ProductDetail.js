@@ -1,9 +1,9 @@
 import React, { useState, useEffect } from 'react';
-import { useParams } from 'react-router-dom'; // Importar useParams para obtener el parámetro de la URL
+import { useParams, Link } from 'react-router-dom'; // Importar useParams para obtener el parámetro de la URL
 import Header from '../components/Header';
 import Image from '../components/Image';
 import Description from '../components/Description';
-import { getProduct } from '../api'; // Importar la función para obtener un producto
+import { getProductDetail } from '../api'; // Importar la función para obtener un producto
 
 function ProductDetail() {
   const { id } = useParams(); // Obtener el parámetro de la URL
@@ -12,7 +12,7 @@ function ProductDetail() {
   useEffect(() => {
     // Obtener el producto al cargar la vista
     const fetchProduct = async () => {
-      const data = await getProduct(id);
+        const data = await getProductDetail(id);
       setProduct(data);
     };
     fetchProduct();
