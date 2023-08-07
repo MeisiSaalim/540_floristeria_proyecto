@@ -1,8 +1,8 @@
 import React from 'react';
 function Search({ onSearchChange }) {
     return (
-        <div>
-            <input type="text" placeholder="Buscar productos..." onChange={onSearchChange}/>
+        <div >
+            <input className='search-input' type="text" placeholder="Buscar productos..." onChange={onSearchChange}/>
         </div>
     )
 }

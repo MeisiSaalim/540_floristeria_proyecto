@@ -1,7 +1,13 @@
 import React from 'react';
+import './Image.css'; // Asegúrate de ajustar la importación según la ubicación de tus archivos
 
 function Image({ src, alt }) {
-  return <img src={src} alt={alt} />;
+  return (
+    <div className="product-image">
+      <img src={src} alt={alt} />
+    </div>
+  );
 }
 
 export default Image;
+

@@ -3,6 +3,7 @@ import Header from '../components/Header';
 import Search from '../components/Search';
 import Item from '../components/Item';
 import { getProducts } from '../api'; // Importar la función para obtener los productos
+import './Home.css'; // Importar los estilos
 
 function Home() {
   const [products, setProducts] = useState([]);
@@ -38,7 +39,6 @@ function Home() {
           {filteredProducts.map((product, index) => (
             <React.Fragment key={product.id}>
               <Item product={product} />
-              {(index + 1) % 4 === 0 && <div className="w-100"></div>}
             </React.Fragment>
           ))}
         </div>

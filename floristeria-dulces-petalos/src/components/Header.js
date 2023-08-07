@@ -1,13 +1,15 @@
 import React from 'react';
+import './Header.css'; // Importa el archivo de estilos CSS que proporcioné anteriormente
 
-function Headers() {
-    return (
-        <header>
-            <div>Floristería Dulces Pétalos</div>
-            <nav>
-                <a href ="/">Inicio</a> / <a href="/productos">Productos</a>
-            </nav>
-        </header>
-    );
+function Header() {
+  return (
+    <header className="header">
+      <div className="logo">Floristería Dulces Pétalos</div>
+      <nav className="nav">
+        <a href="/">Inicio</a> / <a href="/productos">Productos</a>
+      </nav>
+    </header>
+  );
 }
-export default Headers;
+
+export default Header;

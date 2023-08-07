@@ -1,0 +1,82 @@
+/* Home.css */
+/* Estilos para la barra de búsqueda */
+.search-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+  }
+  
+  .search-input {
+    border: none;
+    border-radius: 30px;
+    padding: 10px 20px;
+    width: 300px;
+    font-size: 16px;
+    background-color: #f1f1f1;
+    color: #333;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s ease;
+  }
+  
+  .search-input:focus {
+    outline: none;
+    background-color: #fff;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Estilos para la lista de productos */
+.item-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-top: 20px;
+  }
+  
+  /* Estilos para cada elemento de la lista */
+  .item {
+    flex: 0 0 calc(25% - 20px); /* 4 elementos por fila con espacio entre ellos */
+    margin: 10px;
+    padding: 10px;
+    box-sizing: border-box;
+    border: 1px solid #e0e0e0;
+    border-radius: 10px;
+    background-color: #fff;
+    text-align: center;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+  }
+  
+  .row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-top: 20px;
+  }
+  
+  /* Estilos para la imagen del producto */
+  .item img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+  }
+  
+  /* Estilos para el nombre del producto */
+  .item h3 {
+    margin-top: 10px;
+    font-size: 18px;
+    color: #333;
+    
+  }
+  
+  /* Estilos para el nombre científico del producto */
+  .item p {
+    font-size: 14px;
+    color: #666;
+  }
+  

@@ -4,6 +4,8 @@ import Header from '../components/Header';
 import Image from '../components/Image';
 import Description from '../components/Description';
 import { getProductDetail } from '../api'; // Importar la función para obtener un producto
+import './ProductDetail.css';
+
 
 function ProductDetail() {
   const { id } = useParams(); // Obtener el parámetro de la URL
@@ -21,7 +23,7 @@ function ProductDetail() {
   return (
     <div>
       <Header />
-      <div className="detail-view">
+      <div className="detail-container">
         <Link to="/" className="go-back-link">
           <button className="go-back-button">Volver</button>
         </Link>
