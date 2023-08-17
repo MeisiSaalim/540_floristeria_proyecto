@@ -1,6 +1,5 @@
 import React from 'react';
-import './Image.css'; // Asegúrate de ajustar la importación según la ubicación de tus archivos
-
+import './Image.css'; 
 function Image({ src, alt }) {
   return (
     <div className="product-image">
